@@ -7,9 +7,9 @@ export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token') || '');
   const [loading, setLoading] = useState(true);
 
-  const API_URL = window.location.origin.includes('5173') || window.location.origin.includes('3000') 
-    ? 'http://localhost:5000/api' 
-    : '/api';
+  const API_URL = window.location.origin.includes('5173') || window.location.origin.includes('3000')
+  ? 'http://localhost:5000/api'
+  : 'https://speakwiseai-dnhw.onrender.com/api';
 
   useEffect(() => {
     if (token) {
