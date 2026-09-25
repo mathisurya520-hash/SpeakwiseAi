@@ -26,8 +26,6 @@ app.use(express.json());
 // Enable CORS
 app.use(cors());
 
-const path = require('path');
-const fs = require('fs');
 
 // Mount routers
 app.use('/api/auth', authRoutes);
